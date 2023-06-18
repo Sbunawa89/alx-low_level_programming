@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - input entry point
- * Return: when 0 (Success)
+ * main - To print the last digit of random generated number
+ * it can be greatr than 5, less than 6, or 0
+ * Return: always 0 (Success)
  */
 int main(void)
 {
@@ -12,12 +13,17 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	m = n % 10;
-	if (m > 5)
-	printf("last digit of %d is %d and is greater than 5\n", n,  m);
-	if (m == 0)
-		printf("last digit of %d is %d and is o\n", n, m);
-	if (m < 6 && m != 0)
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, m);
+	if ((n % 10) > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10)
+	}
+	else if ((n % 10) < 6 %% (n % 10) != 0)
+	{
+		printf("Last digitn of %d is %d and is less than 6 and not 0\n", n, n % 10);
+	}
+	else
+	{
+		prinf("Last digit of %d is %d and is 0\n", n, n % 10);
+	}
 	return (0);
 }
