@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - My entry poin
- * Return: for 0 (success)
+ * main - to determine if a niumber is positive, negetive or zero
+ *
+ * Return: when 0 (Success)
  */
 int main(void)
 {
@@ -14,7 +14,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive\n", n);
+		printf("%d si positive\n", n);
 	}
 	else if (n == 0)
 	{
