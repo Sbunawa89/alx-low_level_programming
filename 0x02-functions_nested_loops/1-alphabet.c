@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * main - Entry point to print_alphabet
- * Return: void
+ * print _ alphabet - make the alphabets
+ * Return: Always 0
  */
 void print_alphabet(void)
 {
-	char ch;
+	char c;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar("%c", ch);
+		_putchar('c');
 	}
 	_putchar('\n');
 }
