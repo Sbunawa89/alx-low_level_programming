@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * print _ alphabet - make the alphabets
+ * print _ alphabet - to print alphabets in small letters
+ * @c: character to be checked
  * Return: Always 0
  */
 void print_alphabet(void)
