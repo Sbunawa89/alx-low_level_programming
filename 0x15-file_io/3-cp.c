@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *create_buffer(int *file);
+char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
@@ -12,7 +12,7 @@ void close_file(int fd);
  */
 char *create_buffer(char *file)
 {
-	char *buffer;
+	char *buff;
 
 	buffer = malloc(sizeof(char) * 1024);
 
