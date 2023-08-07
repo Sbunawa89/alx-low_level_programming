@@ -12,7 +12,7 @@ void close_file(int fd);
  */
 char *create_buffer(char *file)
 {
-	char *buff;
+	char *buffer;
 
 	buffer = malloc(sizeof(char) * 1024);
 
